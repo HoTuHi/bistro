@@ -3465,7 +3465,7 @@ svg{
     transform: scale(1.05);
 }
 .un-grid{
-    padding :0px 50px;
+    padding :0px 250px;
     display : grid;
     height : 60vh;
     grid-template-columns : 0.8fr 0.8fr 0.8fr 0.8fr;
@@ -3474,7 +3474,7 @@ svg{
         "aoquan aoquan giay giay"
         "aoquan aoquan dongho dongho"
         "trang trang tui tui";
-    grid-gap : 0.5rem;
+    grid-gap : 1rem;
     text-align: center;
 }
 .constent1{
@@ -3482,10 +3482,7 @@ svg{
     border-radius: 15px;
     background-image:url("../images/ao.jpg");
     background-color: #cccccc;
-    grid-area: aoquan;
-    display: grid;
-    place-items: center;
-      background-position: center;
+    grid-area: aoquan;      background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -3495,8 +3492,6 @@ svg{
     background-image:url("../images/giay.jpg");
     background-color: #cccccc;
     grid-area: giay;
-    display: grid;
-    place-items: center;
       background-position: 50% 75%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3507,8 +3502,6 @@ svg{
     background-image:url("../images/watch.jpg");
     background-color: #cccccc;
     grid-area: dongho;
-    display: grid;
-    place-items: center;
       background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3519,11 +3512,9 @@ svg{
     background-image:url("../images/trangsuc.jpg");
     background-color: #cccccc;
     grid-area: trang;
-    display: grid;
-    place-items: center;
-      background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .constent5{
     padding :10px;
@@ -3531,31 +3522,31 @@ svg{
     background-image:url("../images/phukien.jpg");
     background-color: #cccccc;
     grid-area: tui;
-    display: grid;
-    place-items: center;
-      background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-@media (max-width: 550px){
+@media (max-width: 750px){
     .un-grid{
+        padding:0px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
-        grid-template-areas: "aoquan" "giay" "dongho" "trang" "phukien";
+        grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+        grid-template-areas: "aoquan" "giay" "dongho" "trang" "tui";
 
+    }
+    .un-grid .cl0{
+        font-size: 12px;
     }
 
 }
 .wom{
     position: relative;
-    border: 1px solid #e6e6e6
-    transition: all 0.5s;
+    border: 1px solid #e6e6e6;
+    transition : all 1.5s;
+    overflow: hidden;
 }
 .wom:hover{
     transform: scale(1.005);
-}
-.wom>a{
-    color: black;
 }
 .pay-img{
     margin: 10px;
