@@ -1833,7 +1833,8 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .block1-txt:hover {
-    background-color: rgba(103, 117, 214, .8)
+    background: linear-gradient(90deg, rgba(250,147,6,.5) 0%, rgba(182,4,4,.5) 100%);
+    border-radius: 15px;
 }
 
 .block1-txt:hover .block1-txt-child2 {
@@ -1944,7 +1945,9 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .cl2 {
-    color: #b60404
+     background: -webkit-linear-gradient(45deg, #FA9306,#B60404);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cl3 {
@@ -1956,7 +1959,9 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .cl5 {
-    color: #b60404
+   background: -webkit-linear-gradient(45deg, #FA9306,#B60404);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cl6 {
@@ -3463,4 +3468,98 @@ svg{
 }
 .download-btn-app:hover{
     transform: scale(1.05);
+}
+.un-grid{
+    padding :0px 50px;
+    display : grid;
+    height : 60vh;
+    grid-template-columns : 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr;
+    grid-template-areas :
+        "aoquan aoquan giay giay"
+        "aoquan aoquan dongho dongho"
+        "trang trang phukien phukien";
+    grid-gap : 0.5rem;
+    text-align: center;
+}
+.constent1{
+    padding :10px;
+    border-radius: 15px;
+    background-image:url("../images/ao.jpg");
+    background-color: #cccccc;
+    grid-area: aoquan;
+    display: grid;
+    place-items: center;
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.constent2{
+   padding :10px;
+    border-radius: 15px;
+    background-image:url("../images/giay.jpg");
+    background-color: #cccccc;
+    grid-area: giay;
+    display: grid;
+    place-items: center;
+      background-position: 50% 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.constent3{
+    padding :10px;
+    border-radius: 15px;
+    background-image:url("../images/watch.jpg");
+    background-color: #cccccc;
+    grid-area: dongho;
+    display: grid;
+    place-items: center;
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.constent4{
+    padding :10px;
+    border-radius: 15px;
+    background-image:url("../images/trangsuc.jpg");
+    background-color: #cccccc;
+    grid-area: trang;
+    display: grid;
+    place-items: center;
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.constent5{
+    padding :10px;
+    border-radius: 15px;
+    background-image:url("../images/phukien.jpg");
+    background-color: #cccccc;
+    grid-area: phukien;
+    display: grid;
+    place-items: center;
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 550px){
+    .un-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+        grid-template-areas: "aoquan" "giay" "dongho" "trang" "phukien";
+
+    }
+
+}
+.wom{
+    transition: all 0.5s;
+}
+.wom:hover{
+    transform: scale(1.005);
+}
+.wom>a{
+    color: black;
+}
+.pay-img{
+    margin: 10px;
 }
